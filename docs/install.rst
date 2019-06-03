@@ -193,13 +193,17 @@ official installation method relies on Homebrew:
 Don't forget to use the `pip3` command to install WeasyPrint, as `pip` may be
 using the version of Python installed with macOS.
 
+.. code-block:: sh
+
+    sudo pip3 install WeasyPrint
+
 If you get the `Fontconfig error: Cannot load default config file` message,
-then try reinstalling fontconfig with the `universal` option:
+then try reinstalling fontconfig:
 
 .. code-block:: sh
 
     brew uninstall fontconfig
-    brew install fontconfig --universal
+    brew install fontconfig
 
 You can also try with Macports, but please notice that this solution is not
 tested and thus not recommended (**also known as "you're on your own and may
